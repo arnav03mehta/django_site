@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="head"></div>
+    <font color="white" ><p class="top-title">{{ page_head }}</p></font>
+
+    <main class="center-tabs" >
+
+        {% for item in items %}
+            <a href="{{ item.url }}">
+                <div class="box">
+                    <p class="thing">{{ item.title }}</p>
+                </div>
+            </a>
+        {% endfor %}
+
+    </main>
+{% endblock content %}

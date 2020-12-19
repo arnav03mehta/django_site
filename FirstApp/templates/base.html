@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="icon" href="{% static 'web_icon.png' %}" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap" rel="stylesheet">
+
+    {% if page_title %}
+        <title>arnav03mehta | {{ page_title }}</title>
+    {% else %}
+        <title>arnav03mehta | Page</title>
+    {% endif %}
+
+</head>
+<STYLE>A {text-decoration: none;} </STYLE>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

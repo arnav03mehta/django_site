@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="head"></div>
+    <font color="white" ><p class="top-title"> Projects Page </p></font>
+    <a href="/" class="top-title">Home</a>
+
+    <main class="center-tabs" >
+        
+        <a href="{% url 'FirstApp-projects-calculator' %}">
+            <div class="box"  >
+                <p class="thing">First js project(A Calculator)</p>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <div class="box">
+                <p class="thing">random link</p>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <div class="box">
+                <p class="thing">random link</p>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <div class="box">
+                <p class="thing">random link</p>
+            </div>
+        </a>
+
+    </main> 
+{% endblock content %}
