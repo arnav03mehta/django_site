@@ -19,4 +19,9 @@ def main():
 
 
 if __name__ == '__main__':
+    try:
+        import dotenv
+        dotenv.load_dotenv('.env')
+    except ModuleNotFoundError:
+        pass
     main()
